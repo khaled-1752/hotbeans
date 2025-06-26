@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Profiles - Hot Beans</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #fff8f2;
+            color: #3b2f1b;
+        }
+        header {
+            background: #6f4e37;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #a97451;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffe2c6;
+        }
+        .hero-staff {
+            background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-shadow: 2px 2px 8px #3b2f1ba1;
+        }
+        .hero-staff h1 {
+            font-size: 2.2em;
+            margin: 0;
+        }
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .staff-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .staff-member {
+            flex: 1 1 220px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(111, 78, 55, 0.09);
+            padding: 20px;
+            margin-bottom: 12px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .staff-member img {
+            border-radius: 50%;
+            width: 86px;
+            height: 86px;
+            object-fit: cover;
+            margin-bottom: 14px;
+        }
+        .staff-member h3 {
+            margin: 10px 0 5px 0;
+            color: #a97451;
+        }
+        .staff-member p {
+            margin: 0 0 6px 0;
+            font-size: 1em;
+        }
+        @media (max-width: 700px) {
+            .hero-staff h1 {
+                font-size: 1.4em;
+            }
+            .staff-list {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+        footer {
+            background: #6f4e37;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            position: relative;
+            bottom: 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hot Beans</h1>
+        <p>Your daily dose of freshly brewed code & coffee</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Contact</a>
+        <a href="staff.html">Staff Profiles</a>
+    </nav>
+    <section class="hero-staff">
+        <h1>Meet Our Staff</h1>
+        <p>Get to know the people behind Hot Beans</p>
+    </section>
+    <div class="content">
+        <div class="staff-list">
+            <div class="staff-member">
+                <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Alex Carter">
+                <h3>Alex Carter</h3>
+                <p><strong>Head Barista</strong></p>
+                <p>Alex crafts the perfect cup and keeps the team smiling. Loves latte art and early mornings.</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jamie Lee">
+                <h3>Jamie Lee</h3>
+                <p><strong>Community Manager</strong></p>
+                <p>Jamie organizes events and ensures everyone feels at home. A true people person and coffee aficionado.</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="Sam Patel">
+                <h3>Sam Patel</h3>
+                <p><strong>Lead Developer</strong></p>
+                <p>Sam codes the Hot Beans magic behind the scenes. Enjoys hackathons and strong espresso.</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Riley Chen">
+                <h3>Riley Chen</h3>
+                <p><strong>Event Coordinator</strong></p>
+                <p>Riley brings together coders and creatives for workshops and meetups. Loves flat whites and teamwork.</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Carlos Rivera">
+                <h3>Carlos Rivera</h3>
+                <p><strong>Barista</strong></p>
+                <p>Carlos delivers great service and even better cappuccinos. Always ready with a joke and a smile.</p>
+            </div>
+            <div class="staff-member">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya Singh">
+                <h3>Priya Singh</h3>
+                <p><strong>Junior Developer</strong></p>
+                <p>Priya helps with the website and loves learning new tech. Big fan of cold brew and open source.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Hot Beans. All rights reserved.
+    </footer>
+</body>
+</html>
