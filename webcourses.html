@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Profiles - Hot Beans</title>
+    <title>Web Courses - Hot Beans</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -34,8 +34,8 @@
         nav a:hover {
             color: #ffe2c6;
         }
-        .hero-staff {
-            background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+        .hero-courses {
+            background: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
             color: #fff;
             height: 220px;
             display: flex;
@@ -44,7 +44,7 @@
             flex-direction: column;
             text-shadow: 2px 2px 8px #3b2f1ba1;
         }
-        .hero-staff h1 {
+        .hero-courses h1 {
             font-size: 2.2em;
             margin: 0;
         }
@@ -53,44 +53,58 @@
             margin: 40px auto;
             padding: 0 20px;
         }
-        .staff-list {
+        .courses-list {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
             justify-content: space-between;
         }
-        .staff-member {
-            flex: 1 1 220px;
+        .course-card {
+            flex: 1 1 250px;
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(111, 78, 55, 0.09);
-            padding: 20px;
+            padding: 22px;
             margin-bottom: 12px;
-            text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
-        .staff-member img {
-            border-radius: 50%;
-            width: 86px;
-            height: 86px;
-            object-fit: cover;
-            margin-bottom: 14px;
-        }
-        .staff-member h3 {
-            margin: 10px 0 5px 0;
+        .course-card h3 {
+            margin: 0 0 8px 0;
             color: #a97451;
         }
-        .staff-member p {
-            margin: 0 0 6px 0;
+        .course-card p {
+            margin: 0 0 10px 0;
+        }
+        .course-card .level {
+            font-size: 0.98em;
+            font-weight: bold;
+            color: #6f4e37;
+            margin-bottom: 6px;
+        }
+        .course-card .enroll-btn {
+            margin-top: auto;
+            padding: 10px 0;
+            background: #6f4e37;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
             font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        .course-card .enroll-btn:hover {
+            background: #a97451;
         }
         @media (max-width: 700px) {
-            .hero-staff h1 {
+            .hero-courses h1 {
                 font-size: 1.4em;
             }
-            .staff-list {
+            .courses-list {
                 flex-direction: column;
                 gap: 16px;
             }
@@ -112,52 +126,52 @@
         <p>Your daily dose of freshly brewed code & coffee</p>
     </header>
     <nav>
-          <a href="index.html">Home</a>
+         <a href="index.html">Home</a>
         <a href="applicationform.html">Application Form</a>
         <a href="staffprofiles.html">Staff Profiles</a>
         <a href="aboutus.html">About Us</a>
     </nav>
-    <section class="hero-staff">
-        <h1>Meet Our Staff</h1>
-        <p>Get to know the people behind Hot Beans</p>
+    <section class="hero-courses">
+        <h1>Web Courses</h1>
+        <p>Boost your skills with our curated web development courses</p>
     </section>
     <div class="content">
-        <div class="staff-list">
-            <div class="staff-member">
-                <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Alex Carter">
-                <h3>Alex Carter</h3>
-                <p><strong>Head Barista</strong></p>
-                <p>Alex crafts the perfect cup and keeps the team smiling. Loves latte art and early mornings.</p>
+        <div class="courses-list">
+            <div class="course-card">
+                <h3>HTML & CSS Fundamentals</h3>
+                <div class="level">Beginner</div>
+                <p>Start your web development journey by learning to build and style websites from scratch using HTML and CSS.</p>
+                <a href="#" class="enroll-btn">Enroll Now</a>
             </div>
-            <div class="staff-member">
-                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jamie Lee">
-                <h3>Jamie Lee</h3>
-                <p><strong>Community Manager</strong></p>
-                <p>Jamie organizes events and ensures everyone feels at home. A true people person and coffee aficionado.</p>
+            <div class="course-card">
+                <h3>JavaScript Essentials</h3>
+                <div class="level">Beginner to Intermediate</div>
+                <p>Grasp the basics of JavaScript, the language of the web, and learn to make your websites interactive and dynamic.</p>
+                <a href="#" class="enroll-btn">Enroll Now</a>
             </div>
-            <div class="staff-member">
-                <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="Sam Patel">
-                <h3>Sam Patel</h3>
-                <p><strong>Lead Developer</strong></p>
-                <p>Sam codes the Hot Beans magic behind the scenes. Enjoys hackathons and strong espresso.</p>
+            <div class="course-card">
+                <h3>Responsive Web Design</h3>
+                <div class="level">Intermediate</div>
+                <p>Learn how to make your websites look great on all devices by mastering responsive layouts and modern CSS techniques.</p>
+                <a href="#" class="enroll-btn">Enroll Now</a>
             </div>
-            <div class="staff-member">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Riley Chen">
-                <h3>Riley Chen</h3>
-                <p><strong>Event Coordinator</strong></p>
-                <p>Riley brings together coders and creatives for workshops and meetups. Loves flat whites and teamwork.</p>
+            <div class="course-card">
+                <h3>Front-End Frameworks (React)</h3>
+                <div class="level">Intermediate to Advanced</div>
+                <p>Dive into React and discover how to build powerful, modern web applications using component-based architecture.</p>
+                <a href="#" class="enroll-btn">Enroll Now</a>
             </div>
-            <div class="staff-member">
-                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Carlos Rivera">
-                <h3>Carlos Rivera</h3>
-                <p><strong>Barista</strong></p>
-                <p>Carlos delivers great service and even better cappuccinos. Always ready with a joke and a smile.</p>
+            <div class="course-card">
+                <h3>Back-End Basics (Node.js & Express)</h3>
+                <div class="level">Intermediate</div>
+                <p>Understand the fundamentals of back-end development and build your first server with Node.js and Express.</p>
+                <a href="#" class="enroll-btn">Enroll Now</a>
             </div>
-            <div class="staff-member">
-                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Priya Singh">
-                <h3>Priya Singh</h3>
-                <p><strong>Junior Developer</strong></p>
-                <p>Priya helps with the website and loves learning new tech. Big fan of cold brew and open source.</p>
+            <div class="course-card">
+                <h3>Full-Stack Project Lab</h3>
+                <div class="level">Advanced</div>
+                <p>Put your skills to the test with real-world projects, combining front-end and back-end technologies in a collaborative environment.</p>
+                <a href="#" class="enroll-btn">Enroll Now</a>
             </div>
         </div>
     </div>
