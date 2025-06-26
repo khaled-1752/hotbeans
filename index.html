@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Beans - Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #fff8f2;
+            color: #3b2f1b;
+        }
+        header {
+            background: #6f4e37;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #a97451;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffe2c6;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-shadow: 2px 2px 8px #3b2f1ba1;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-top: 18px;
+        }
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .about, .features {
+            margin-bottom: 40px;
+        }
+        .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .feature-item {
+            flex: 1 1 250px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(111, 78, 55, 0.09);
+            padding: 22px;
+            margin-bottom: 12px;
+        }
+        .feature-item h3 {
+            margin-top: 0;
+            color: #a97451;
+        }
+        footer {
+            background: #6f4e37;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            position: relative;
+            bottom: 0;
+            margin-top: 60px;
+        }
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .features-list {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hot Beans</h1>
+        <p>Your daily dose of freshly brewed code & coffee</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to Hot Beans</h1>
+        <p>Great coffee. Great code. Great community.</p>
+    </section>
+    <div class="content">
+        <section class="about">
+            <h2>About Hot Beans</h2>
+            <p>
+                Hot Beans is where passionate developers and coffee lovers meet. Whether you’re looking for your next caffeine fix or a place to collaborate on your latest coding project, we’re here to fuel your creativity and connect you with a vibrant community.
+            </p>
+        </section>
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>Premium Coffee</h3>
+                    <p>Enjoy the finest selection of beans, expertly brewed by our baristas for the perfect cup every time.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Cozy Workspace</h3>
+                    <p>Modern, comfortable spaces with high-speed Wi-Fi, ideal for coding, meetings, or just relaxing.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Tech Community</h3>
+                    <p>Join our events, workshops, and meetups to learn, share, and grow with fellow tech enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Hot Beans. All rights reserved.
+    </footer>
+</body>
+</html>
