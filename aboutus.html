@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hot Beans</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #fff8f2;
+            color: #3b2f1b;
+        }
+        header {
+            background: #6f4e37;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: #a97451;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffe2c6;
+        }
+        .hero-about {
+            background: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-shadow: 2px 2px 8px #3b2f1ba1;
+        }
+        .hero-about h1 {
+            font-size: 2.6em;
+            margin: 0;
+        }
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .about-section {
+            margin-bottom: 38px;
+        }
+        .team-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .team-member {
+            flex: 1 1 220px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(111, 78, 55, 0.09);
+            padding: 20px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 86px;
+            height: 86px;
+            object-fit: cover;
+            margin-bottom: 14px;
+        }
+        .team-member h3 {
+            margin: 10px 0 5px 0;
+            color: #a97451;
+        }
+        .team-member p {
+            margin: 0;
+            font-size: 1em;
+        }
+        .values-list {
+            list-style-type: disc;
+            margin: 20px 0 20px 28px;
+            color: #6f4e37;
+        }
+        footer {
+            background: #6f4e37;
+            color: #fff;
+            text-align: center;
+            padding: 18px 0;
+            position: relative;
+            bottom: 0;
+            margin-top: 60px;
+        }
+        @media (max-width: 700px) {
+            .hero-about h1 {
+                font-size: 1.6em;
+            }
+            .team-list {
+                flex-direction: column;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hot Beans</h1>
+        <p>Your daily dose of freshly brewed code & coffee</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section class="hero-about">
+        <h1>About Us</h1>
+        <p>Meet the team and our story behind Hot Beans</p>
+    </section>
+    <div class="content">
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <p>
+                Hot Beans began with a simple idea — to create a welcoming space where passionate coders and coffee enthusiasts could connect, create, and collaborate. Founded in 2022, we’ve grown from a cozy local café to a vibrant hub for the tech community, fueled by a love for both expertly brewed coffee and innovative code.
+            </p>
+        </section>
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>
+                We strive to inspire creativity, foster learning, and build connections. At Hot Beans, we believe the best ideas are sparked over a great cup of coffee, surrounded by like-minded people who are always eager to share and grow together.
+            </p>
+        </section>
+        <section class="about-section">
+            <h2>Our Values</h2>
+            <ul class="values-list">
+                <li>Welcoming Community</li>
+                <li>Quality in Every Cup</li>
+                <li>Continuous Learning</li>
+                <li>Collaboration & Innovation</li>
+                <li>Supporting Local & Global Causes</li>
+            </ul>
+        </section>
+        <section class="about-section">
+            <h2>Meet the Team</h2>
+            <div class="team-list">
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Alex Carter">
+                    <h3>Alex Carter</h3>
+                    <p>Founder & Head Barista</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Jamie Lee">
+                    <h3>Jamie Lee</h3>
+                    <p>Community Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/24.jpg" alt="Sam Patel">
+                    <h3>Sam Patel</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Riley Chen">
+                    <h3>Riley Chen</h3>
+                    <p>Event Coordinator</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Hot Beans. All rights reserved.
+    </footer>
+</body>
+</html>
